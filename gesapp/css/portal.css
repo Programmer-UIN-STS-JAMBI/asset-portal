@@ -1,0 +1,112 @@
+
+		.rss-feed {
+			background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+			border-radius: 12px;
+			padding: 20px;
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+		}
+		.rss-feed h2 {
+			color: #0d47a1;
+			font-size: 1.7rem;
+			font-weight: bold;
+			border-bottom: 3px solid #0d47a1;
+			padding-bottom: 10px;
+			margin-bottom: 20px;
+		}
+		.rss-item {
+			text-align: left;
+			display: flex;
+			align-items: flex-start;
+			border-bottom: 1px solid #ddd;
+			padding: 15px 0;
+			transition: transform 0.3s ease, background 0.3s ease;
+		}
+		.rss-item:last-child {
+			border-bottom: none;
+		}
+		.rss-item:hover {
+			transform: scale(1.02);
+			background: #e1f5fe;
+			border-radius: 8px;
+		}
+		.rss-icon {
+			font-size: 1.5rem;
+			color: #0d47a1;
+			margin-right: 15px;
+		}
+		.rss-item h3 {
+			font-size: 1.2rem;
+			margin: 0;
+			font-weight: bold;
+			color: #1565c0;
+		}
+		.rss-item p {
+			font-size: 0.9rem;
+			text-align: justify;
+			color: #424242;
+			margin: 5px 0 0;
+			line-height: 1.5;
+		}
+		.rss-item a {
+			color: #1976d2;
+			text-decoration: none;
+			transition: color 0.3s ease;
+		}
+		.rss-item a:hover {
+			color: #0d47a1;
+		}
+		.feature-image {
+			width: 100%;
+			border-radius: 12px;
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+		}
+	@media (max-width: 768px) {
+    .features {
+        flex-direction: column; /* Atur layout vertikal untuk mobile */
+    }
+
+    .features .rss-feed {
+        text-align: center; /* Pusatkan konten berita */
+        margin-bottom: 20px;
+    }
+
+    .features .rss-feed h2 {
+        font-size: 20px; /* Kurangi ukuran font untuk mobile */
+    }
+
+    .features .content-image img {
+        width: 100%; /* Buat gambar memenuhi lebar layar */
+        height: auto; /* Pertahankan proporsi gambar */
+        margin: 0 auto; /* Pusatkan gambar */
+    }
+
+    .features02 .content-image img {
+        width: 100%; /* Sesuaikan gambar fitur */
+        height: auto;
+    }
+
+    .features02 .content {
+        text-align: center;
+    }
+
+    .features02 .content h5 {
+        font-size: 16px;
+    }
+
+    .features02 .content p {
+        font-size: 14px;
+    }
+
+    /* Counter responsive */
+    .counter .row .col-md {
+        flex: 1 1 100%; /* Biarkan setiap kolom memenuhi layar */
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .intro-image img {
+        width: 100%; /* Gambar intro responsif */
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
